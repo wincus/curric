@@ -1,0 +1,37 @@
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[final,english,a4paper]{curve}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5in,vmargin=1.5in]{geometry}
+%\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage{palatino}	
+%\usepackage[colorlinks]{hyperref}
+%\usepackage[pdfstartview=FitV,colorlinks=true,bookmarks=true]{hyperref}
+\usepackage[colorlinks=true,urlcolor=red]{hyperref}
+
+\leftheader{~}
+\rightheader{~}
+
+\photo[r]{image/mia}
+\photoscale{0.30}
+\title{Curriculum Vitae}
+\subtitle{Juan A. Moyano}
+
+\begin{document}
+
+% english version
+\flavor{en}
+
+\makeheaders[t]
+\maketitle
+\rubricalignment{l}
+\makerubric{personales}
+\makerubric{estudios}
+%\makerubric{cursos}
+\makerubric{idiomas}
+\makerubric{conocimientos}
+\makerubric{trabajos}
+
+\end{document}
+
+%% cv.tex ends here.
