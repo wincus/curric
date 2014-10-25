@@ -2,24 +2,16 @@ AUTHOR = Juan A Moyano
 SOURCE = *.tex
 TARGET =  curric.dvi
 TARGETPDF = curric.pdf
+OUTDIR = pdf
 
 all: $(TARGETPDF)
 
-%.dvi: %.tex
-	latex $< 
-
 %.pdf: %.tex
-	pdflatex $<
+	pdflatex -output-directory $(OUTDIR) $<
 
 $(TARGET): $(SOURCE)
 
 $(TARGETPDF): $(TARGET)
 
-preview: $(TARGET)
-	xdvi $<
-
-previewpdf: $(TARGETPDF)
-	xdg-open $<
-
 clean:
-	rm -fv *.aux *.log *.out $(TARGET) $(TARGETPDF)
+	$(MAKE) -C $(OUTDIR) $@
