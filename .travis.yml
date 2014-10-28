@@ -2,7 +2,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install texlive texlive-fonts-recommended texlive-lang-spanish texlive-latex-base texlive-latex-extra texlive-latex-recommended
 script: make clean curric.pdf
-after_success: ./update-pdf-file.sh
+after_success: bash update-pdf-file.sh
 env:
   global:
     secure: wPX89uLBXpMh7QuWQ2UzYYPl9LUV2TxluOrnrTYyKo40slnFF3fdK957Krhbw9eq+OZItMGzzAfCu/MtjY3Gq6hk3TRTDgH6TC7q2if9c7dVoODeH/qwifjyuHaaaWQD9lwyH377Fyh7Njfcb1+wATJ/f7vYbjXVWsSyqA6phi8=
