@@ -10,7 +10,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   git add pdf/curric.pdf
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed [ci skip]"
-  git push -fq origin > /dev/null
+  git push -fq origin master > /dev/null
 
   echo -e "Done!\n"
 fi
