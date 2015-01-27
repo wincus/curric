@@ -8,7 +8,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo "https://${GH_TOKEN}:@github.com" > .git/credentials
   git config credential.helper "store --file=.git/credentials"
   git remote set-url origin https://github.com/wincus/curric.git
-  git add pdf/curric.pdf
+  mv pdf/curric.pdf pdf/jmoyano-resume.pdf
+  git add pdf/jmoyano-resume.pdf
   git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed [ci skip]"
   git push -fq origin master > /dev/null
 
