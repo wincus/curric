@@ -5,3 +5,4 @@ You can find a PDF version [here](https://github.com/wincus/curric/raw/master/pd
 I wrote something about it [here](http://blog.wincus.com.ar/self-building-latex-resume.html).
 
 [![Build Status](https://travis-ci.org/wincus/curric.svg?branch=master)](https://travis-ci.org/wincus/curric)
+
